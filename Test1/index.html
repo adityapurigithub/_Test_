@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-container">
+        <div class="err-msg"></div>
+        <form onsubmit="">
+          <div class="field">
+            <label>Select Storage source:-</label>
+            <select>
+              <option value="">Drop-Box</option>
+              <option value="">Google Drive</option>
+              <option value="">One Drive</option>
+              <option value="">i-Cloud</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pipeline-name">Pipeline Name:-</label>
+            <input
+              id="pipeline-name"
+              type="text"
+              placeholder="e.g., cust_shop_energy_gkateway001"
+            />
+          </div>
 
+          <div class="field">
+            <label for="project-name">GCS Project Name:-</label>
+            <input id="project-name" type="text" placeholder="project-name" />
+          </div>
+          <div class="field">
+            <label for="bucket-name">GCS bucket name :-</label>
+            <input
+              id="bucket-name"
+              type="text"
+              placeholder="gs://your-bucket"
+            />
+          </div>
+          <div class="field">
+            <label for="bucket-name">Input Cloud Storage File(s):-</label>
+            <input
+              id="bucket-name"
+              type="text"
+              placeholder="GCS location of your files"
+            />
+          </div>
+          <div class="field">
+            <label for="credentials">GCS credentials:-</label>
+            <input id="credentials" type="text" placeholder="Credentials" />
+          </div>
+          <div class="field">
+            <label for="counts">Run Every:-</label>
+            <input id="counts" type="number" placeholder="(in minutes)" />
+          </div>
+
+          <div class="field">
+            <button type="submit" id="button-add">Create</button>
+            <button type="submit" id="button-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
